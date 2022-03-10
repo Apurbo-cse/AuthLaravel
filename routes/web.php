@@ -22,7 +22,7 @@ Route::get('user/dashboard', function () {
 })->middleware(['auth'])->name('user.dashboard');
 
 Route::get('admin/dashboard', function () {
-    return view('admin-dashboard');
+    return view('backend.index');
 })->middleware(['auth'])->name('admin.dashboard');
 
 require __DIR__.'/auth.php';
