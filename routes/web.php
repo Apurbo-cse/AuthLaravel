@@ -17,12 +17,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
 Route::get('user/dashboard', function () {
     return view('user-dashboard');
 })->middleware(['auth'])->name('user.dashboard');
 
-Route::get('admin/dashboard', function () {
-    return view('backend.index');
-})->middleware(['auth'])->name('admin.dashboard');
+
+
+
+
+
 
 require __DIR__.'/auth.php';
+require __DIR__.'/admin.php';
