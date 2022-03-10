@@ -18,9 +18,17 @@ Route::get('admin/dashboard', function () {
 
 
 Route::group(['prefix' => 'admin/', 'as' => 'admin.', 'middleware' => ['auth']], function () {
-    Route::get('category', [CategoryController::class, 'index'])->name('category');
-    Route::get('category/create', [CategoryController::class, 'create'])->name('create');
-    Route::get('category/edit', [CategoryController::class, 'edit'])->name('edit');
+    // Route::get('category', [CategoryController::class, 'index'])->name('category');
+    // Route::get('category/create', [CategoryController::class, 'create'])->name('create');
+    // Route::get('category/edit', [CategoryController::class, 'edit'])->name('edit');
+
+
+    Route::group(['prefix' => 'category/', 'as' => 'category.'], function () {
+        Route::get('/', [CategoryController::class, 'index'])->name('index');
+        Route::get('create', [CategoryController::class, 'create'])->name('create');
+        Route::get('edit', [CategoryController::class, 'edit'])->name('edit');
+    });
+
 });
 
 

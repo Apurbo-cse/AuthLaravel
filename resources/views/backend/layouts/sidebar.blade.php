@@ -60,13 +60,13 @@
           <i class="fas fa-sitemap"></i>
           <span>Category</span>
         </a>
-        {{-- <div id="categoryCollapse" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div id="categoryCollapse" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Category Options:</h6>
-            <a class="collapse-item" href="{{ route('category') }}">Category</a>
-            <a class="collapse-item" href="{{ route('category\create') }}">Add Category</a>
+            <a class="collapse-item" href="{{ route('admin.category.index') }}">Category</a>
+            <a class="collapse-item" href="{{ route('admin.category.create') }}">Add Category</a>
           </div>
-        </div> --}}
+        </div>
     </li>
     {{-- Products --}}
     <li class="nav-item">

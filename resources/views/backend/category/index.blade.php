@@ -12,7 +12,7 @@
 
     <div class="card-header py-3">
         <h6 class="m-0 font-weight-bold text-primary float-left">Category Lists</h6>
-        <a href="http://127.0.0.1:8000/admin/category/create" class="btn btn-primary btn-sm float-right"
+        <a href="{{ route('admin.category.create') }}" class="btn btn-primary btn-sm float-right"
             data-toggle="tooltip" data-placement="bottom" title="Add User"><i class="fas fa-plus"></i> Add Category</a>
     </div>
     <div class="card-body">
@@ -59,7 +59,7 @@
                             <span class="badge badge-success">active</span>
                         </td>
                         <td>
-                            <a href="http://127.0.0.1:8000/admin/category/4/edit"
+                            <a href="{{ route('admin.category.edit') }}"
                                 class="btn btn-primary btn-sm float-left mr-1"
                                 style="height:30px; width:30px;border-radius:50%" data-toggle="tooltip" title="edit"
                                 data-placement="bottom"><i class="fas fa-edit"></i></a>
